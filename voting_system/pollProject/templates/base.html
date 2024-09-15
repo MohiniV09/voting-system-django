@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+          crossorigin="anonymous">
+    <title>{% block title %}Online Voting System{% endblock %}</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+            font-size: 1.2em;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .form-check-label {
+            margin-left: 5px;
+        }
+        .btn {
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!--NavBar-->
+    {% include 'partials/_navbar.html' %}
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        Designed and Developed by Lalithashree P, Mohini V, Lahari N, Dept of CSE, DSATM, Bangalore
+    </div>
+</body>
+</html>

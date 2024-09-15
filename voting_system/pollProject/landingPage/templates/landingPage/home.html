@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to the Online Voting System</h1>
+    <p class="lead">Your vote counts! Participate in online polls and make your voice heard.</p>
+    <hr class="my-4">
+    <p>Our secure and reliable system ensures that your vote is confidential and counted accurately.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'polls:index' %}" role="button">View Polls</a>
+</div>
+{% endblock %}
